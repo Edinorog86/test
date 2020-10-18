@@ -14,7 +14,7 @@ namespace Gis
 			//необходимо, что бы подавить эксэпшн из-за кривого сертификата на сервере
 			ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
-			var service = new NsiPortsTypeAsyncClient();
+			var service = new  NsiPortsTypeAsyncClient();
             service.ClientCredentials.UserName.UserName = "lanit";
             service.ClientCredentials.UserName.Password = "tv,n8!Ya";
 
